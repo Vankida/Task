@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  color: white;
+}
+
+.table-container {
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr.td {
+  color: black;
+}
+
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  text-align: left;
+  font-size: 2vmin;
+  color: #cdcdcd;
+}
+
+.invisible {
+  display: none;
+  margin: 0;
+}
+
+td:hover {
+  background-color: #353535; /* Change background color on hover */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+@media (max-width: 1600px) {
+  table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 421px) {
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 10px;
+  }
+
+  .invisible {
+    display: block; /* Make it visible for viewport width greater than 421px */
+  }
+}
+
+div {
+  text-align: center;
+  margin: 20px;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  background-color: #242424;
+  border: solid 1px rgb(94, 94, 94);
+  border-radius: 4px;
+  color: white;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#matchesInfo {
+  margin-top: 10px;
+  font-weight: bold;
+}
